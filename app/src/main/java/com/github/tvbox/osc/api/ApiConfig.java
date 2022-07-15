@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitea.com/yxcqr/TvBox/raw/commit/068cbfaade484666c719174e82949caccbc3a1a3/MaoTV/01.txt");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
